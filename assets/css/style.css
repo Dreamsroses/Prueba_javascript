@@ -1,0 +1,59 @@
+.navbar{
+	color: #0084b4;
+	text-align: center;
+	 margin-right: auto;
+ margin-left: auto;
+ display: block;
+}
+.fa-twitter{
+	text-align: center;
+}
+.img__background{
+	max-width: 100%;
+	height: auto;
+}
+.columna__izquierda--titular{
+    border: 6px solid white;
+    background-color: lightgrey;
+    padding: 50px; 	
+}
+.columna__derecha--titular{
+    border: 6px solid white;
+    background-color: #0084b4;
+    padding: 50px; 	
+}
+.columna__izquierda{
+    border: 6px solid white;
+    background-color: lightgrey;
+    padding: 50px; 	
+}
+.columna__derecha{
+    border: 6px solid white;
+    background-color: #0084b4;
+    padding: 50px; 	
+}
+.fa-twitter{
+	margin: 20px;
+	text-align: center;
+}
+
+@media (min-width: 300px) and (max-width: 600px){
+.row{
+	display: flex;
+}
+.row__titular{
+	     display: flex;
+        flex-flow: row wrap;
+}
+.columna__izquierda{
+	flex: auto;
+    padding: 20px; 	
+    padding-bottom: 30px;
+}
+.columna__derecha{
+		flex: auto;
+    padding: 20px; 	
+    padding-bottom: 30px;
+}
+
+@media (min-width: 601px) and (max-width: 800px){
