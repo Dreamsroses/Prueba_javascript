@@ -1,59 +1,88 @@
 .navbar{
 	color: #0084b4;
 	text-align: center;
-	 margin-right: auto;
- margin-left: auto;
- display: block;
+	margin-right: auto;
+ 	margin-left: auto;
+ 	display: block;
 }
 .fa-twitter{
 	text-align: center;
+}
+.fa-user-circle{
+	text-align: center;
+	font-size: 100px;
+	color: #0084b4;
+	text-align: center;
+	margin-right: auto;
+ 	margin-left: auto;
+ 	display: block;
+}
+.fa-paperclip{
+	color: grey;
+	font-size: 30px;
 }
 .img__background{
 	max-width: 100%;
 	height: auto;
 }
-.columna__izquierda--titular{
-    border: 6px solid white;
-    background-color: lightgrey;
-    padding: 50px; 	
-}
-.columna__derecha--titular{
-    border: 6px solid white;
-    background-color: #0084b4;
-    padding: 50px; 	
+.cambiar__foto{
+	text-align: center;
 }
 .columna__izquierda{
-    border: 6px solid white;
-    background-color: lightgrey;
+    border: 6px solid black;
     padding: 50px; 	
 }
 .columna__derecha{
     border: 6px solid white;
     background-color: #0084b4;
-    padding: 50px; 	
 }
 .fa-twitter{
 	margin: 20px;
 	text-align: center;
 }
+.columna__derecha--post{
+	background-color: #0084b4;
+	width: 300px;
+	height: 300px;
+	padding: 50px;
+}
+.post__delete{
+	float: right;
+	font-size: 30px;
+}
 
 @media (min-width: 300px) and (max-width: 600px){
-.row{
-	display: flex;
-}
 .row__titular{
-	     display: flex;
-        flex-flow: row wrap;
+	display: block;
+	float: right;
+}
+.columna__derecha--post{
+	display: block;
+	width: 300px;
 }
 .columna__izquierda{
-	flex: auto;
     padding: 20px; 	
     padding-bottom: 30px;
+    width: 300px;
 }
 .columna__derecha{
-		flex: auto;
     padding: 20px; 	
     padding-bottom: 30px;
 }
-
+.columna__derecha--post{
+	display: block;
+	float: left;
+}
+.post__delete{
+	float: right;
+	font-size: 30px;
+	display: block;
+}
+.cambiar__foto{
+	padding-left: auto;
+	padding-right: auto;
+}
+.fa-user-circle{
+	padding: 80px;
+}
 @media (min-width: 601px) and (max-width: 800px){
