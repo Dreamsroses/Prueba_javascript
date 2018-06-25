@@ -2,13 +2,14 @@ $(document).ready(function(){
 	$("form").on('submit', function(event){
 		var tweet = $("textarea").val();
 		event.preventDefault();
-		$("body").append('<div class="columna__derecha--post">'
+		$("body").append(
+		'<div class="columna__derecha--post">'
 		+ '<div class="fa-trash-alt">'
 		+ '</div>'
 		+ tweet
 		+ '</div>')
 	});
-$('.fa-trash-alt').on('click', function(){
-	alert("Borrando");
+  $('.fa-trash-alt').on('click', function(){
+  	$(this).parent().fadeOut(400);
 	})
 })
