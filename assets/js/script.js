@@ -8,4 +8,7 @@ $(document).ready(function(){
 		+ tweet
 		+ '</div>')
 	});
+$('.fa-trash-alt').on('click', function(){
+	alert("Borrando");
+	})
 })
