@@ -21,22 +21,25 @@
 	color: grey;
 	font-size: 30px;
 }
+.fa-heart{
+	color: white;
+	margin-top: 40px; 
+}
 .img__background{
 	max-width: 100%;
 	height: auto;
 }
 .cambiar__foto{
 	text-align: center;
+	border: 10px;
 }
-.columna__izquierda--principal{
+.contenedor__izquierda--principal{
     border: 6px solid white;
-    padding: 50px; 	
 }
-.columna__izquierda{
+.contenedor__izquierda{
     border: 6px solid white;
-    padding: 50px; 	
 }
-.columna__derecha{
+.contenedor__derecha{
     border: 6px solid white;
     background-color: #0084b4;
 }
@@ -44,42 +47,40 @@
 	margin: 20px;
 	text-align: center;
 }
-.columna__derecha--post{
-	width: 300px;
-	height: 300px;
+.contenedor__derecha--post{
+	border: 6px solid white;
+    background-color: #0084b4;
+	width: 500px;
+	height: 400px;
 	padding: 50px;
 	overflow: auto;
 	margin: 10px;
 	float: right;
 	display: block;
 }
-.fa-trash-alt{
+.twett__delete{
 	float: right;
 	font-size: 30px;
 	color: white;
 	position: none;
 }
-@media (min-width: 300px) and (max-width: 600px){
-.row__titular{
+@media (min-width: 200px) and (max-width: 600px){
+.contenedor__derecha--post{
 	display: block;
-	float: right;
+	max-width: 300px;
 }
-.columna__derecha--post{
-	display: block;
-	width: 300px;
-}
-.columna__izquierda--principal{
-    border: 2px solid black;
+.contenedor__izquierda--principal{
     display: block; 
 }
-.columna__izquierda{
+.contenedor__izquierda{
 	display: none;
 }
-.columna__derecha{
+.contenedor__derecha{
     padding: 20px; 	
     padding-bottom: 30px;
+    max-width: 100%;
 }
-.columna__derecha--post{
+.contenedor__derecha--post{
 	display: block;
 	max-width: 100%;
 }

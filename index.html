@@ -1,101 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-  	<!-- stylesheet bootstrap 4.1.1 -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-	<!-- /stylesheet bootstrap 4.1.1 -->
+ <!-- stylesheet bootstrap 4.1.1 -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+ <!-- /stylesheet bootstrap 4.1.1 -->
 
-  <!-- Stylesheet Fontawesome 5.1 -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  <!-- /Stylesheet Fontawesome 5.1 -->
+ <!-- Stylesheet Fontawesome 5.1 -->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+ <!-- /Stylesheet Fontawesome 5.1 -->
 
-  	<!-- Mi hoja de estilo css -->
-	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-	<!-- /Mi hoja de estilo css -->
+ <!-- Mi hoja de estilo css -->
+ <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+ <!-- /Mi hoja de estilo css -->
 
+ <meta charset="utf-8">
+ <title>Prueba JavaScript</title>
 
-	<meta charset="utf-8">
-
-	<title>Prueba JavaScript</title>
 </head>
+
 <body>
 
-<nav class="navbar bg-light">
-  <a class="navbar-brand" href="#">
-    <i class="fab fa-twitter fa-2x"></i>
-  </a>
-</nav>
+  <nav class="navbar bg-light">
+    <a class="navbar-brand" href="#">
+      <i class="fab fa-twitter fa-2x"></i>
+    </a>
+  </nav>
 
-<div class="jumbotron">
+  <div class="jumbotron">
     <h1 class="display-4">Bienvenidos a Mini Twitter</h1>
-   	<img class="img__background" src="./assets/img/tw_bg.png">
-</div>
-
-    <div class="row row__titular justify-content-center">
-    <div class="col-4 columna__izquierda--principal">
-    <i class="fas fa-user-circle"></i>
-    <p class="cambiar__foto">Cambiar Foto</p>
-  <div>
-  <form>
-      <textarea></textarea>
-    <input type="submit" name="" value="Crear Tweet">   
-  </form> 
+    <img class="img__background" src="./assets/img/tw_bg.png">
   </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 ml-0 contenedor__izquierda--principal">
+     <i class="fas fa-user-circle"></i>
+      <button type="button" class="btn btn-light">Cambiar Foto</button>
+      <div>
+        <form>
+          <textarea></textarea>
+          <input type="submit" name="" value="Crear Tweet">   
+        </form> 
+      </div>
     </div>
-   <div class="col-6 columna__derecha columna__derecha--post">
-      <i class="fas fa-trash-alt"></i>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  
+  <div class="col-md-6 ml-auto contenedor">
+     <div class="contenedor__derecha contenedor__derecha--post">
+      <i class="twett__delete fas fa-trash-alt"></i>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
+    <div><i class="fas fa-heart"></i></div>
     </div>
+  </div>
 
-  <div class="row row__titular justify-content-center">
-    <div class="col-md-4 columna__izquierda">
-    </div>
-    
-  <div id="contenedor">
-    <div class="col-6 columna__derecha columna__derecha--post">
-      <i class="fas fa-trash-alt"></i>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  <div class="col-md-6 contenedor ml-auto">
+     <div class="contenedor__derecha contenedor__derecha--post">
+      <i class="twett__delete fas fa-trash-alt"></i>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
+      <div><i class="fas fa-heart"></i></div>
     </div>
-</div>
+  </div>
 
- <div class="row row__titular justify-content-center">
-    <div class="col-md-4 columna__izquierda">
-    </div> 
+</div>  
 
-    <div class="col-6 columna__derecha columna__derecha--post">
-      <i class="fas fa-trash-alt"></i>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
-</div>
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
-<script src="./assets/js/script.js" type="text/javascript"></script>
-
-<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
+<script src="./assets/js/script.js" type="text/javascript"></script>
 
 </body>
 </html>
