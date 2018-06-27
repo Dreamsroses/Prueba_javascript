@@ -5,8 +5,10 @@ $(document).ready(function(){
 
 		var twett = `
 			<div class="contenedor__derecha--post">
-				<i class="twett__delete fas fa-trash-alt"></i>
+			    <i class="fas fa-user"></i>
 				${ tweet }
+				<i class="fas fa-heart"></i>
+				<i class="twett__delete fas fa-trash-alt"></i>
 			</div>
 		`;
 		$("body").append(twett);
@@ -17,7 +19,7 @@ $(document).ready(function(){
 		+ tweet
 		+ '</div>')*/
 	});
-  $('.contenedor').on('click', '.twett__delete fas fa-trash-alt',  function(){
-  	$(this).parent().fadeOut(400);
+  $('.contenedor__derecha--post').on('click', '.twett__delete', function(){
+  	$(this).parent().fadeOut(900);
 	})
 })
