@@ -92,6 +92,9 @@ input[type="submit"] {
     display: block;
     margin-bottom: 10px;
 }
+#image__perfil{
+	max-width: 200px;
+}
 @media (min-width: 200px) and (max-width: 600px){
 .contenedor__derecha--post{
 	display: block;

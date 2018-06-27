@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$("form").on('submit', function(event){
+	$("#post").on('submit', function(event){
 		var tweet = $("textarea").val();
 		event.preventDefault();
 
@@ -22,4 +22,23 @@ $(document).ready(function(){
   $('.contenedor__derecha--post').on('click', '.twett__delete', function(){
   	$(this).parent().fadeOut(900);
 	})
-})
+});
+
+console.clear(); // Esto limpia la consola
+
+$('#uploader').submit(function(evt){
+  evt.preventDefault();
+  
+  // Create a reader
+  var reader = new FileReader();
+  
+  // Get the image
+  var file = $(evt.target).find('input[type="file"]').get(0).files[0];
+  
+  reader.readAsDataURL(file);
+  
+  reader.onload = function(e){
+    console.log('The image was load');
+    $('#image__perfil').attr('src', e.target.result);
+	}
+});
