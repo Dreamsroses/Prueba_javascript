@@ -12,12 +12,11 @@ $(document).ready(function(){
 		</div>
 		`;
 		$('.contenedor').prepend(tweet);
-		$("textarea").val('');
-		$("textarea").focus();
+		$("#post__texto").val('');
+		$("#post__texto").focus();
 		$('.contenedor__derecha--post').on("click", ".tweet__delete", function(){
 			$( ".contenedor" ).remove('');
-		})
-
+})
 /*		$("body").append(
 		'<div class="contenedor__derecha--post">'
 		+ '<div class="fa-trash-alt">'
@@ -25,7 +24,7 @@ $(document).ready(function(){
 		+ tweet
 		+ '</div>')*/
 	});
-	$('.contenedor__derecha').on('click', '.tweet__delete', function(){
+	$('.contenedor').on('click', '.tweet__delete', function(){
 		$(this).parent().fadeOut(900);
 	})
 });
@@ -41,31 +40,33 @@ $('#uploader').submit(function(evt){
   var file = $(evt.target).find('input[type="file"]').get(0).files[0];
   reader.readAsDataURL(file);
   reader.onload = function(e){
-  	console.log('The image was load');
+  	console.log('La imagen fue cargada Satisfactoriamente');
   	$('#image__perfil').attr('src', e.target.result);
   }
 });
 
 //Contador de Likes
 var contador = 0;
-$('.tweet__contador').click(function(){ 
+$('.tweet__contador').click(function(){
 	if (contador < 50 ) {
 		contador++;
 	} else if (contador = contador++) {
 		contador = 0;
 	}
-	document.getElementById("display__contador").innerHTML = contador;
+	document.getElementById("display__contador").innerHTML = contador;	
 })
 
 // Modificar color del icono heart
 $(document).ready(function(){
-    $(".tweet__contador").on("click",function(){
-	    $(".tweet__contador").css("color", "#E80C7A");
-    });
+	$(".tweet__contador").hover(function(){
+		$(".tweet__contador").css("color", "#C3C3C3");
+	}, function(){
+		$(".tweet__contador").css("color", "#E80C7A");	  
+	});
 });
 
 /*$('.disminuye').click(function(){ 
    if (contador > 0) {--contador;} 
         document.getElementById("display__contador").innerHTML = contador;
-})*/
+    })*/
 
