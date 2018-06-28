@@ -13,6 +13,10 @@
  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
  <!-- /Mi hoja de estilo css -->
 
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+<!-- /Google Fonts -->
+
  <meta charset="utf-8">
  <title>Prueba JavaScript</title>
 
@@ -27,7 +31,7 @@
   </nav>
 
   <div class="jumbotron">
-    <h1 class="titulo__display-4">Bienvenidos a Mini Twitter</h1>
+    <h1 class="titulo__display">Bienvenidos a Mini Twitter</h1>
     <img class="img__background" src="./assets/img/tw_bg.png">
   </div>
 
@@ -61,7 +65,11 @@
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </div>
     <i class="tweet__delete fas fa-trash-alt"></i>
-    <i class="tweet__contador fas fa-heart"></i>
+    <i class="tweet__contador fas fa-heart">       
+      <div class="texto">
+      <label id="display__contador">0</label>
+    </div></i>
+
   </div>
 </div>
 </div>  

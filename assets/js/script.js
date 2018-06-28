@@ -49,10 +49,23 @@ $('#uploader').submit(function(evt){
 //Contador de Likes
 var contador = 0;
 $('.tweet__contador').click(function(){ 
-	if (contador < 20 ) {
+	if (contador < 50 ) {
 		contador++;
 	} else if (contador = contador++) {
 		contador = 0;
 	}
-	document.getElementById("display").innerHTML = contador;
+	document.getElementById("display__contador").innerHTML = contador;
 })
+
+// Modificar color del icono heart
+$(document).ready(function(){
+    $(".tweet__contador").on("click",function(){
+	    $(".tweet__contador").css("color", "#E80C7A");
+    });
+});
+
+/*$('.disminuye').click(function(){ 
+   if (contador > 0) {--contador;} 
+        document.getElementById("display__contador").innerHTML = contador;
+})*/
+

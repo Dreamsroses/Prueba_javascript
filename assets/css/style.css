@@ -52,7 +52,7 @@
 	border: 6px solid white;
     background-color: #0084b4;
 	width: 500px;
-	height: 500px;
+	height: 550px;
 	padding: 50px;
 	overflow: auto;
 	margin: 10px;
@@ -101,10 +101,20 @@ input[type="submit"] {
 #image__perfil{
 	max-width: 200px;
 }
+#display__contador{
+	font-family: 'Raleway', sans-serif;
+	font-size: 500;
+	color: white;
+}
+.titulo__display{
+	font-family: 'Raleway', sans-serif;
+	font-size: 700;
+}
 @media (min-width: 200px) and (max-width: 600px){
 .contenedor__derecha--post{
 	display: block;
 	max-width: 300px;
+	text-align: center;
 }
 .contenedor__izquierda--principal{
     display: block; 
