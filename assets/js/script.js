@@ -3,15 +3,21 @@ $(document).ready(function(){
 		var tweet = $("textarea").val();
 		event.preventDefault();
 
-		var twett = `
-			<div class="contenedor__derecha--post">
-			    <i class="fas fa-user"></i>
-				${ tweet }
-				<i class="fas fa-heart"></i>
-				<i class="twett__delete fas fa-trash-alt"></i>
-			</div>
+		var tweet = `
+		<div class="contenedor__derecha--post">
+		<i class="fas fa-user"></i>
+		${ tweet }
+		<i class="tweet__contador fas fa-heart"></i>
+		<i class="tweet__delete fas fa-trash-alt"></i>
+		</div>
 		`;
-		$("body").append(twett);
+		$('.contenedor').prepend(tweet);
+		$("textarea").val('');
+		$("textarea").focus();
+		$('.contenedor__derecha--post').on("click", ".tweet__delete", function(){
+			$( ".contenedor" ).remove('');
+		})
+
 /*		$("body").append(
 		'<div class="contenedor__derecha--post">'
 		+ '<div class="fa-trash-alt">'
@@ -19,26 +25,34 @@ $(document).ready(function(){
 		+ tweet
 		+ '</div>')*/
 	});
-  $('.contenedor__derecha--post').on('click', '.twett__delete', function(){
-  	$(this).parent().fadeOut(900);
+	$('.contenedor__derecha').on('click', '.tweet__delete', function(){
+		$(this).parent().fadeOut(900);
 	})
 });
 
-console.clear(); // Esto limpia la consola
+console.clear(); 
 
+//Subir imagen
 $('#uploader').submit(function(evt){
-  evt.preventDefault();
-  
-  // Create a reader
+	evt.preventDefault();
+  // Crear la lectura
   var reader = new FileReader();
-  
-  // Get the image
+  // Tomar la imagen
   var file = $(evt.target).find('input[type="file"]').get(0).files[0];
-  
   reader.readAsDataURL(file);
-  
   reader.onload = function(e){
-    console.log('The image was load');
-    $('#image__perfil').attr('src', e.target.result);
-	}
+  	console.log('The image was load');
+  	$('#image__perfil').attr('src', e.target.result);
+  }
 });
+
+//Contador de Likes
+var contador = 0;
+$('.tweet__contador').click(function(){ 
+	if (contador < 20 ) {
+		contador++;
+	} else if (contador = contador++) {
+		contador = 0;
+	}
+	document.getElementById("display").innerHTML = contador;
+})

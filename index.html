@@ -27,23 +27,21 @@
   </nav>
 
   <div class="jumbotron">
-    <h1 class="display-4">Bienvenidos a Mini Twitter</h1>
+    <h1 class="titulo__display-4">Bienvenidos a Mini Twitter</h1>
     <img class="img__background" src="./assets/img/tw_bg.png">
   </div>
 
   <div class="container">
     <div class="row">
       <div class="col-md-4 ml-0 contenedor__izquierda--principal">
-     
-     <div>
-      <img id="image__perfil" src="" alt="">
-    </div>
-     <form id="uploader" action="">
+       <div>
+        <img id="image__perfil" src="" alt="">
+      </div>
+      <form id="uploader" action="">
         <input type="file">
         <button class="btn">Cambiar Foto</button>
       </form>
       <div>
-
         <form id="post">
           <textarea></textarea>
           <input type="submit" name="" value="Crear Tweet">   
@@ -51,26 +49,10 @@
       </div>
     </div>
 
-    <div class="col-md-6 ml-auto contenedor">
-     <div class="contenedor__derecha contenedor__derecha--post">
-      <i class="fas fa-user"></i>
-      <div>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
-      <i class="twett__delete fas fa-trash-alt"></i>
-      <i class="fas fa-heart"></i>
-    </div>
-  </div>
-
-  <div class="col-md-6 contenedor ml-auto">
+  <div class="col-md-6 contenedor ml-auto"> 
    <div class="contenedor__derecha contenedor__derecha--post">
     <i class="fas fa-user"></i>
-    <div>
+    <div class="tweet__contenido">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -78,12 +60,30 @@
       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </div>
-    <i class="twett__delete fas fa-trash-alt"></i>
-    <i class="fas fa-heart"></i>
+    <i class="tweet__delete fas fa-trash-alt"></i>
+    <i class="tweet__contador fas fa-heart"></i>
   </div>
 </div>
 </div>  
 
+<!--
+  <div class="col-md-6 contenedor ml-auto"> 
+   <div class="contenedor__derecha contenedor__derecha--post">
+    <i class="fas fa-user"></i>
+    <div class="tweet__contenido">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <i class="tweet__delete fas fa-trash-alt"></i>
+    <i class="tweet__contador fas fa-heart"></i>
+  </div>
+</div>
+</div>  
+-->
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 

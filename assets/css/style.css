@@ -59,13 +59,18 @@
 	float: right;
 	display: block;
 }
-.twett__delete{
+.tweet__contenido{
+	display: block;
+	padding: 10px;
+	margin: 5px;
+}
+.tweet__delete{
 	float: right;
 	font-size: 20px;
 	color: white;
 	margin-top: 40px;
 }
-.fa-heart{
+.tweet__contador{
 	float: left;
 	font-size: 20px;
 	color: white;
@@ -74,6 +79,7 @@
 	color: white;
 	margin-bottom: 15px;
 	font-size: 35px;
+	display: block;
 }
 .btn{
 	margin-right: auto;
