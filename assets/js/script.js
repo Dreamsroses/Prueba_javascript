@@ -13,7 +13,7 @@ $(document).ready(function(){
 		$('.contenedor').prepend(tweet);
 		$("#post__texto").val('');
 		$("#post__texto").focus();
-});
+	});
 
 //Delete Tweet
 $('.contenedor').on('click', '.tweet__delete', function(){
@@ -46,12 +46,8 @@ $('#uploader').submit(function(evt){
 	  var file = $(evt.target).find('input[type="file"]').get(0).files[0];
 	  reader.readAsDataURL(file);
 	  reader.onload = function(e){
-	  console.log('La imagen fue cargada Satisfactoriamente');
-	  $('#image__perfil').attr('src', e.target.result);
-	  $("#image").change(function(evt){
-	  var image='assets/images/profile_picture.png/'+$(this).val();
-	  $('#image__perfil').attr('src', image);
-		});
+	  	console.log('La imagen fue cargada Satisfactoriamente');
+	  	$('.image__perfil').attr('src', e.target.result);
 	  }
 	});
 });
