@@ -101,7 +101,7 @@ input[type="submit"] {
 #image__perfil{
 	max-width: 200px;
 }
-#display__contador{
+.display__contador{
 	font-family: 'Raleway', sans-serif;
 	font-size: 500;
 	color: white;
