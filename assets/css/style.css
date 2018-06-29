@@ -2,8 +2,8 @@
 	color: #0084b4;
 	text-align: center;
 	margin-right: auto;
- 	margin-left: auto;
- 	display: block;
+	margin-left: auto;
+	display: block;
 }
 .fa-twitter{
 	text-align: center;
@@ -13,9 +13,9 @@
 	font-size: 100px;
 	color: #0084b4;
 	margin-right: auto;
- 	margin-left: auto;
- 	margin-top: 20px;
- 	display: block;
+	margin-left: auto;
+	margin-top: 20px;
+	display: block;
 }
 .fa-paperclip{
 	color: grey;
@@ -34,15 +34,15 @@
 	border: 10px;
 }
 .contenedor__izquierda--principal{
-    border: 6px solid white;
+	border: 6px solid white;
 }
 .contenedor__izquierda{
-    border: 6px solid white;
+	border: 6px solid white;
 }
 .contenedor__derecha{
-    border: 6px solid white;
-    background-color: #0084b4;
-    text-align: left;
+	border: 6px solid white;
+	background-color: #0084b4;
+	text-align: left;
 }
 .fa-twitter{
 	margin: 20px;
@@ -50,7 +50,7 @@
 }
 .contenedor__derecha--post{
 	border: 6px solid white;
-    background-color: #0084b4;
+	background-color: #0084b4;
 	width: 500px;
 	height: 550px;
 	padding: 50px;
@@ -83,10 +83,10 @@
 }
 .btn{
 	margin-right: auto;
- 	margin-left: auto;
- 	display: block;
- 	margin-top: 10px;
- 	margin-bottom: 100px;
+	margin-left: auto;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 100px;
 }
 textarea{
 	max-width: 100%;
@@ -94,9 +94,9 @@ textarea{
 	padding: auto;
 }
 input[type="submit"] {
-    width: 160px;
-    display: block;
-    margin-bottom: 10px;
+	width: 160px;
+	display: block;
+	margin-bottom: 10px;
 }
 #image__perfil{
 	max-width: 200px;
@@ -112,40 +112,40 @@ input[type="submit"] {
 	font-size: 700;
 }
 @media (min-width: 200px) and (max-width: 600px){
-.contenedor__derecha--post{
-	display: block;
-	max-width: 300px;
-	text-align: center;
-}
-.contenedor__izquierda--principal{
-    display: block; 
-}
-.contenedor__izquierda{
-	display: none;
-}
-.contenedor__derecha{
-    padding: 20px; 	
-    padding-bottom: 30px;
-    max-width: 100%;
-   	height: 100%;
-}
-.contenedor__derecha--post{
-	display: block;
-	max-width: 100%;
-}
-.fa-trash-alt{
-	float: right;
-	font-size: 30px;
-	display: block;
-}
-.cambiar__foto{
-	padding-left: auto;
-	padding-right: auto;
-}
-.btn{
- 	margin-bottom: 50px;
-}
-textarea{
-	margin-top: 0px;
-}
-@media (min-width: 601px) and (max-width: 800px){
+	.contenedor__derecha--post{
+		display: block;
+		max-width: 300px;
+		text-align: center;
+	}
+	.contenedor__izquierda--principal{
+		display: block; 
+	}
+	.contenedor__izquierda{
+		display: none;
+	}
+	.contenedor__derecha{
+		padding: 20px; 	
+		padding-bottom: 30px;
+		max-width: 100%;
+		height: 100%;
+	}
+	.contenedor__derecha--post{
+		display: block;
+		max-width: 100%;
+	}
+	.fa-trash-alt{
+		float: right;
+		font-size: 30px;
+		display: block;
+	}
+	.cambiar__foto{
+		padding-left: auto;
+		padding-right: auto;
+	}
+	.btn{
+		margin-bottom: 50px;
+	}
+	textarea{
+		margin-top: 0px;
+	}
+	@media (min-width: 601px) and (max-width: 800px){

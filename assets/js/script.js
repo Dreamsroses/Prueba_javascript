@@ -47,12 +47,12 @@ $('#uploader').submit(function(evt){
 	  reader.readAsDataURL(file);
 	  reader.onload = function(e){
 	  	console.log('La imagen fue cargada Satisfactoriamente');
-	  	$('.image__perfil').attr('src', e.target.result);
+	  	$('#image__perfil').attr('src', e.target.result);
 	  }
 	});
 });
 
-// console.clear();
+console.clear();
 //Contador de Likes
 /*var contador = 0;
 $('.tweet__contador').click(function(){
@@ -64,4 +64,3 @@ $('.tweet__contador').click(function(){
 	document.getElementById("display__contador").innerHTML = contador;	
 })*/
 
-// Modificar color del icono heart
